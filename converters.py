@@ -14,7 +14,6 @@ from PIL import Image
 import markdown
 import pandas as pd
 
-# PDF и Word
 try:
     from pypdf import PdfReader, PdfWriter
     from pdf2image import convert_from_path
@@ -45,9 +44,6 @@ class ConversionError(Exception):
     pass
 
 
-# ═══════════════════════════════════════════════════════════════
-# КОНВЕРТАЦИЯ ИЗОБРАЖЕНИЙ
-# ═══════════════════════════════════════════════════════════════
 
 class ImageConverter:
     """Конвертер изображений"""
